@@ -1,0 +1,12 @@
+{
+  "name": "shared",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "jose": "^6.0.11",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

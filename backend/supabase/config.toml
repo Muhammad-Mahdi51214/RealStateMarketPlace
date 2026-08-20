@@ -1,0 +1,11 @@
+# Minimal Supabase CLI config for local/linked projects.
+# Apply migrations: supabase db push   (or supabase migration up --local)
+
+project_id = "csc-marketplace"
+
+[db]
+major_version = 15
+
+[db.seed]
+enabled = true
+sql_paths = ["./seed.sql"]

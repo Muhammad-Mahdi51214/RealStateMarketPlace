@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+:root {
+  /* Real State Market Place — navy + teal trust palette */
+  --primary-navy: #001a4d;
+  --primary-teal: #0a6e4f;
+  --accent-green: #4caf50;
+  --brand-green: #7cb342;
+  --plot-residential: #f5a623;
+  --plot-commercial: #2f6fe0;
+  --status-reserved: #e0a800;
+  --status-sold: #6b7280;
+  --status-available: #4caf50;
+  --status-verified: #0a6e4f;
+  --alert-warning-bg: #fdecea;
+  --alert-warning-text: #c0392b;
+  --bg-base: #ffffff;
+  --bg-muted: #f4f7f5;
+  --border: #e2e8f0;
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  --background: var(--bg-base);
+  --foreground: var(--text-primary);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary-navy: var(--primary-navy);
+  --color-primary-teal: var(--primary-teal);
+  --color-accent-green: var(--accent-green);
+  --color-brand-green: var(--brand-green);
+  --color-plot-residential: var(--plot-residential);
+  --color-plot-commercial: var(--plot-commercial);
+  --color-status-reserved: var(--status-reserved);
+  --color-status-sold: var(--status-sold);
+  --color-status-available: var(--status-available);
+  --color-status-verified: var(--status-verified);
+  --color-alert-warning-bg: var(--alert-warning-bg);
+  --color-alert-warning-text: var(--alert-warning-text);
+  --color-bg-base: var(--bg-base);
+  --color-bg-muted: var(--bg-muted);
+  --color-border: var(--border);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --font-sans: var(--font-manrope);
+}
+
+body {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  font: inherit;
+  z-index: 0;
+}
+
+/* Boost town-plan label clarity without replacing source art */
+.town-plan-enhanced {
+  filter: contrast(1.18) saturate(1.1) brightness(1.04);
+  image-rendering: auto;
+}
+
+.nav-tab-active-dot {
+  box-shadow: 0 0 0 2px rgba(232, 242, 255, 0.9);
+}
